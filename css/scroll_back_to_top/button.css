@@ -1,0 +1,15 @@
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(132, 138, 106, 0.60);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+}
+
+.go-top:hover {
+	background-color: rgba(132, 138, 106, 0.90);
+}
