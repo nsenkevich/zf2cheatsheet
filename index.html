@@ -1,13 +1,14 @@
 <html lang="en">
-    
-    <head>
-        <title>ZF2cheatsheet </title>
-        <meta charset="utf-8">
 
-        <meta name="description" content="The Wonder of Waypoints">
-        <meta name="author" content="Ian Yates">
-        <!--Mobile specific meta goodness :)-->
+    <head>
+        <title>zf2 cheatsheet</title>
+
+        <meta name="description" content="Free zf2 tutorials, zend2 cheat sheats">
+        <meta name="keywords" content="zf2, zf2 view, zf2 model, zf2 form, zf2 doctrine 2">
+        <meta name="author" content="Nikolai Senkevich">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
         <!--css-->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/responsive_table/responsive-tables.css">
@@ -42,8 +43,8 @@
                         <li><a href="#validation">Validation</a></li>
                         <!--                    <li><a href="#chapter-8">Security</a></li>-->
                     </ul>
-<!--                    <div class="nav-left"></div>
-                    <div class="nav-right"></div>-->
+                    <!--                    <div class="nav-left"></div>
+                                        <div class="nav-right"></div>-->
                     <div class="nav-above"></div>
                 </nav>
             </div>
@@ -334,7 +335,7 @@
                     <pre class="brush: php">
         $this->json($this->data, array $params)
                     </pre>
-                    
+
                 </div>
                 <div class="column right">
                     <h5>Body</h5>
@@ -1535,9 +1536,9 @@ class CommentFieldset extends Fieldset
     <p>validate only a subset of form elements.</p>
     <pre class="brush: php">
         $form->setValidationGroup('comment', 'email', 'subject', 'message');
-    </pre>
-    <p>validate only a subset of the fieldsets.</p>
-    <pre class="brush: php">
+                    </pre>
+                    <p>validate only a subset of the fieldsets.</p>
+                    <pre class="brush: php">
     $form->setValidationGroup(array(
          'csrf',
          'username' => array(
@@ -1550,7 +1551,7 @@ class CommentFieldset extends Fieldset
             ),
         ),
     ));
-    </pre>
+                    </pre>
                     <p>Creating custom elements // todo </p>
                 </div>
                 <div class="column right">
@@ -1937,7 +1938,7 @@ class CommentFieldset extends Fieldset
                     </pre>
                     <h4>Segment</h4>
                     <p>Matching any segment of a URI path. 
-                    Provides parameter matching based on delimiters and constraints,
+                        Provides parameter matching based on delimiters and constraints,
                     </p>
                     <pre class="brush: php">
     //http://site.com/route-test/controller/action/34
@@ -2656,45 +2657,45 @@ $valid->isValid('/tmp/myfile.txt'); //false
                         </tr>
 
 
-<!--                        <tr>
-                            <td>Sha1</td>
-                            <td>Zend\Validator\File\Sha1();</td>
-                        </tr>
-
-                        <tr>
-                            <td>Md5</td>
-                            <td>Zend\Validator\File\Md5();</td>
-                        </tr>
-                        <tr>
-                            <td>Crc32</td>
-                            <td>Zend\Validator\File\Crc32();</td>
-                        </tr>
-                        <tr>
-                            <td>Hash</td>
-                            <td>Zend\Validator\File\Hash();</td>
-                        </tr>
-                        <td colspan="3">Other</td>
-                        <tr>
-                            <td>InArray</td>
-                            <td>Zend\Validator\InArray();</td>
-                        </tr>
-
-                        <tr>
-                            <td>Step</td>
-                            <td>Zend\Validator\Step();</td>
-                        </tr>
-                        <tr>
-                            <td>Iban</td>
-                            <td>Zend\Validator\Iban()); </td>
-                        </tr>
-                        <tr>
-                            <td>Isbn</td>
-                            <td>Zend\Validator\Isbn();</td>
-                        </tr>
-                        <tr>
-                            <td>Barcode</td>
-                            <td>Zend\Validator\Barcode();</td>
-                        </tr>-->
+                        <!--                        <tr>
+                                                    <td>Sha1</td>
+                                                    <td>Zend\Validator\File\Sha1();</td>
+                                                </tr>
+                        
+                                                <tr>
+                                                    <td>Md5</td>
+                                                    <td>Zend\Validator\File\Md5();</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Crc32</td>
+                                                    <td>Zend\Validator\File\Crc32();</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hash</td>
+                                                    <td>Zend\Validator\File\Hash();</td>
+                                                </tr>
+                                                <td colspan="3">Other</td>
+                                                <tr>
+                                                    <td>InArray</td>
+                                                    <td>Zend\Validator\InArray();</td>
+                                                </tr>
+                        
+                                                <tr>
+                                                    <td>Step</td>
+                                                    <td>Zend\Validator\Step();</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Iban</td>
+                                                    <td>Zend\Validator\Iban()); </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Isbn</td>
+                                                    <td>Zend\Validator\Isbn();</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Barcode</td>
+                                                    <td>Zend\Validator\Barcode();</td>
+                                                </tr>-->
 
                     </table>
 
