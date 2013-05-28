@@ -254,8 +254,8 @@
                     <p>Retrieve view value in layout</p>
                     <pre class="brush: php">
     //layout.phtml
-    $viewModel = $this->viewModel()->getCurrent()
-    $children = $viewModel->getChildren();;
+    $viewModel = $this->viewModel()->getCurrent();
+    $children = $viewModel->getChildren();
     $viewModel = $children[0];
     $viewModel->foo;
                     </pre>
