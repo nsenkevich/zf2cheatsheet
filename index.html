@@ -18,7 +18,8 @@
         <link rel="stylesheet" href="css/SyntaxHighlighter/shThemeRDark.css" />
         <link rel="stylesheet" href="css/scroll_back_to_top/button.css" />
         <link rel="stylesheet" href="css/table/TableStyles.css" />
-
+        <link rel="stylesheet" href="contactable/contactable.min.css" type="text/css" />
+        
         <!--        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>-->
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,6 +38,9 @@
         </script>
     </head>
     <body id="home">
+
+<!--start contactable -->
+<div id="my-contact-div"><!-- contactable html placeholder --></div>
 
         <div class="wrapper">
             <header>
@@ -2734,6 +2738,29 @@ $valid->isValid('/tmp/myfile.txt'); //false
             SyntaxHighlighter.all()
             SyntaxHighlighter.defaults.toolbar = false;
         </script>
+        
+<script type="text/javascript" src="contactable/jquery.contactable.min.js"></script>
+<script>
+	jQuery(function(){
+		jQuery('#my-contact-div').contactable(
+        {
+            subject: 'feedback URL:'+location.href,
+            url: 'contactable/mail.php',
+            name: 'Name',
+            email: 'Email',
+            dropdownTitle: 'Issue',
+            dropdownOptions: ['General', 'Website bug', 'Feature request'],
+            message : 'Message',
+            submit : 'SEND',
+            recievedMsg : 'Thank you for your message',
+            notRecievedMsg : 'Sorry but your message could not be sent, try again later',
+            disclaimer: 'Please feel free to get in touch, we value your feedback',
+            hideOnSubmit: true
+        });
+	});
+</script>
+<!--end contactable -->
+
 
 
 
