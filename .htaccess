@@ -1,1 +1,7 @@
-AddType x-httpd-php53 .php
+#########################
+# redirect www to no-www
+#########################
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
+RewriteRule ^(.*) http://%1/$1 [R=301,NE,L]
